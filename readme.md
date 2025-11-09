@@ -1,3 +1,4 @@
+````markdown
 # ⚡ Calculator API — TypeScript + Fastify
 
 A lightweight and type-safe **backend API** that performs basic arithmetic operations.  
@@ -55,18 +56,26 @@ npm run build
 
 # Start compiled server
 npm start
+````
+
+The server will start on **[http://localhost:3000](http://localhost:3000)**
+
+---
+
+## 🌐 Example Endpoints
+
+| Method | Endpoint            | Example Response                                                 |
+| ------ | ------------------- | ---------------------------------------------------------------- |
+| GET    | `/add?a=5&b=10`     | `{ "operation": "addition", "result": 15 }`                      |
+| GET    | `/subtract?a=8&b=3` | `{ "operation": "subtraction", "result": 5 }`                    |
+| GET    | `/multiply?a=4&b=6` | `{ "operation": "multiplication", "result": 24 }`                |
+| GET    | `/divide?a=10&b=0`  | `{ "operation": "division", "result": "Cannot divide by zero" }` |
+
+---
+
+## 🗂 Folder Structure
+
 ```
-The server will start on http://localhost:3000
-
-## Example Endpoints
-
-- GET /add?a=5&b=10       → { "operation": "addition", "result": 15 }
-- GET /subtract?a=8&b=3   → { "operation": "subtraction", "result": 5 }
-- GET /multiply?a=4&b=6   → { "operation": "multiplication", "result": 24 }
-- GET /divide?a=10&b=0    → { "operation": "division", "result": "Cannot divide by zero" }
-
-## Folder structure 
-
 calculator-api-ts/
 ├── src/
 │   ├── app.ts               # Fastify server setup and startup logic
@@ -75,29 +84,46 @@ calculator-api-ts/
 ├── package.json             # Project metadata and scripts
 ├── tsconfig.json            # TypeScript configuration
 └── node_modules/            # Installed dependencies
+```
 
-## Key learnings 
+---
 
-- Understood how TypeScript enforces compile-time safety in backend APIs
-- Learned how to set up and structure a Fastify project properly
-- Practiced modular programming — separating routes, configs, and logic
-- Understood CommonJS vs ESModule setup differences in Node.js
-- Gained hands-on experience with async functions, error handling, and logging
-- Created a clean development setup using ts-node and npm scripts
+## 🧠 Key Learnings
 
-## Future Improvements
+* Understood how **TypeScript** enforces compile-time safety in backend APIs
+* Learned how to set up and structure a **Fastify** project properly
+* Practiced **modular programming** — separating routes, configs, and logic
+* Understood **CommonJS vs ESModule** setup differences in Node.js
+* Gained hands-on experience with **async functions**, error handling, and logging
+* Created a clean development setup using **ts-node** and **npm scripts**
 
-- Add input validation using Fastify’s JSON schema or Zod
-- Implement a /history route to store previous calculations
-- Add unit testing with Jest or Vitest
-- Integrate Docker for containerized deployment
-- Improve error response structure and input sanitization
-- Extend the project to include advanced math operations (power, modulus, etc.)
+---
 
-## Author
+## 🌱 Future Improvements
 
-Nikhil Raj
+* Add input validation using **Fastify’s JSON schema** or **Zod**
+* Implement a `/history` route to store previous calculations
+* Add **unit testing** with Jest or Vitest
+* Integrate **Docker** for containerized deployment
+* Improve **error response structure** and input sanitization
+* Extend the project with **advanced math operations** (power, modulus, etc.)
+
+---
+
+## 👨‍💻 Author
+
+**Nikhil Raj**
 Backend Developer | Student at IIIT Nagpur
-📫 Contact:
-- [Linkedin](https://www.linkedin.com/in/nikhil0raj/)
-- [Email](nikhil4rajj@gmail.com)
+
+📫 **Contact:**
+
+* [LinkedIn](https://www.linkedin.com/in/nikhil0raj/)
+* [Email](mailto:nikhil4rajj@gmail.com)
+
+---
+
+> *"Clean code isn’t about perfection — it’s about clarity and confidence."*
+> — **Nikhil Raj**
+
+```
+```
