@@ -1,4 +1,4 @@
-````markdown
+
 # ⚡ Calculator API — TypeScript + Fastify
 
 A lightweight and type-safe **backend API** that performs basic arithmetic operations.  
@@ -57,6 +57,8 @@ npm run build
 # Start compiled server
 npm start
 ````
+
+---
 
 The server will start on **[http://localhost:3000](http://localhost:3000)**
 
